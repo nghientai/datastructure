@@ -14,9 +14,9 @@ public class CircularLinkedList {
         // If list is empty
         if (current == null) {
             System.out.println("New node " + n + " created!");
-            DoubleNode newNode = new DoubleNode();
-            newNode.data = n;
-            newNode.next = newNode.prev = newNode;
+            DoubleNode newNode = new DoubleNode(); //create a new node
+            newNode.data = n; //assign new data to the node
+            newNode.next = newNode.prev = newNode; //link prev and next to itself
             current = newNode;
         } else {
             System.out.println("Insert " + n + " before " + current.data);
